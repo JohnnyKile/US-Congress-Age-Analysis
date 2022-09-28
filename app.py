@@ -29,10 +29,48 @@ else:
     filtered_data = data_grouped_party[data_grouped_party['party'] == party_to_filter]
     st.line_chart(data=filtered_data, x='year', y='age')
 
-r_data = data_grouped_party[data_grouped_party['party'] == 'Republican'] 
-d_data = data_grouped_party[data_grouped_party['party'] == 'Democrat'] 
-i_data = data_grouped_party[data_grouped_party['party'] == 'Independent'] 
+st.write('RDATA')
+
+# def separate_parties(df, party_list):
+#     for party in party_list
+
+
+# party_list = ['Democrat', 'Republican', 'Independent']
+# i = 0
+# for party in party_list:
+#     if i == 0:
+#         party_data = data_grouped_party[data_grouped_party['party'] == party]
+#         r_data.rename(columns = {'age':'age_Republicans'}, inplace = True)
+
+
+r_data = data_grouped_party[data_grouped_party['party'] == 'Republican'][['year','age']]
+r_data.rename(columns = {'age':'age_Republicans'}, inplace = True)
 r_data
+d_data = data_grouped_party[data_grouped_party['party'] == 'Democrat'][['year','age']]
+d_data.rename(columns = {'age':'age_Democrats'}, inplace = True)
+d_data 
+i_data = data_grouped_party[data_grouped_party['party'] == 'Independent'][['year','age']]
+i_data.rename(columns = {'age':'age_Independent'}, inplace = True)
+i_data 
+
+st.write('JOINED')
+
+joined = d_data.join(r_data.set_index('year'), on='year').join(i_data.set_index('year'), on='year')
+joined
+
+st.line_chart(joined, x='year')
+
+
+i_data = data_grouped_party[data_grouped_party['party'] == 'Independent'] 
+
+joined = d_data.join(r_data.set_index('year'), on='year')
+joined
+
+
+# chartdata = pd.DataFrame(
+#     ,
+#     columns=['a', 'b', 'c'])
+# r_data
 
 fig, ax = plt.subplots()
 ax.plot(r_data['year'], r_data['age'], color='red', label='Republicans')
@@ -52,10 +90,11 @@ st.pyplot(fig)
 # grouped_multiple
 
 data_grouped = data.groupby('year')
-data_grouped_party = data.groupby(['year','party'])
-data_grouped_party.get_group(('Republican'))
+# data_grouped_party = data.groupby(['year','party'])
+# data_grouped_party.get_group(('Republican'))
 
-# st.line_chart(data=data_grouped['year','age'].median(), x='year', y='age')
+st.line_chart(data=data_grouped['year','age'].median(), x='year', y='age')
+st.line_chart(data=data_grouped['year','age'].median(), x='year', y='age')
 
 def plot():
 
