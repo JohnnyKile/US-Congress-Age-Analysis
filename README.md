@@ -29,9 +29,9 @@ The median age of the U.S. Congress was plotted over time, as shown in the chart
 
 The chart showed that in recent years, since 1980 through 2022, the median age of the U.S. Congress has steadily increased from 51 years old to 61. This chart also showed that 90% of the 2022 U.S. Congress was above the age of 44.  For comparison, 75% of the 1980 U.S. Congress was older than 43.  The percentiles pushed me to explore the age range distribution a bit more to further understand the data.  I utilized Tableau to put the ages into bins utilizing ranges of 10 years with the exception of the upper range.  The bins were as follows: 25-34, 35-44, 45-54, 55-64, 65-74, 75+.  The age distribution data was visualized using an area chart with a continuous year axis, as well as using a heat map, with year intervals of 20, per below.
 
-![](/Users/johnnykile/Portfolio/LegislatorAnalysis/images/AgeRangeDistribution-AreaChart.png)
+![](https://github.com/JohnnyKile/US-Legislator-Age-Analysis/blob/main/images/2-AgeRangeDistribution-AreaChart.png?raw=true)
 
-![](/Users/johnnykile/Portfolio/LegislatorAnalysis/images/AgeRangeDistribution-HeatMap.png)
+![](https://github.com/JohnnyKile/US-Legislator-Age-Analysis/blob/main/images/3-AgeRangeDistribution-HeatMap.png?raw=true)
 
 These two visualizations showed that the proportion of congress made up of people in the 25-34 and 35-44 age ranges were generally shrinking over time, while the proportion of congress made up of legislators in the 55-64, 65-74, and 75+ age ranges were growing. For example, from 1980 to 2020 the percentage of the U.S. Congress that was aged 35-44 dropped more than half, from 25.14% to 11.23%.  Meanwhile the percentage of the U.S. Congress aged 65-74 almost tripled, from 10.28% in 1980, to 29.10% in 2020. (Note: values for the other groups and years can be viewed on the [Tableau dashboard](https://public.tableau.com/app/profile/johnny.kile/viz/U_S_CongressAgeVisualization/DashboardFinal)).
 
