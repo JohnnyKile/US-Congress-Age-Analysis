@@ -4,7 +4,7 @@
 
 This project was inspired by an [article]( https://www.businessinsider.com/gerontocracy-united-states-congress-red-white-and-gray-data-charts-2022-9) published in Business Insider titled "The oldest government in history," by Annie Fu, Walt Hickey, and Shayanne Gal.  This article highlighted the increasing median age of the U.S. Congress over time, and after reading it I was interested in doing my own analysis on the data referenced within the article.  Specifically I was interested in looking at the changes in age range distribution of U.S. Congress over the years, which was not included in their original article.
 
-I utilized Python to prep the obtained data files (discussed below), and Tableau Public to create the data visualizations.  [Please click here to view the Tableau data visualation of this data.](https://public.tableau.com/app/profile/johnny.kile/viz/U_S_CongressAgeVisualization/DashboardFinal)
+I utilized Python to prep the obtained data files (discussed below), and Tableau Public to create the data visualizations.  [Please click here to view the Tableau data visualization of this data.](https://public.tableau.com/app/profile/johnny.kile/viz/U_S_CongressAgeVisualization/DashboardFinal)
 
 ## Analysis
 
